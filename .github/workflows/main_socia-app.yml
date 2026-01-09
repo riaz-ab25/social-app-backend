@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_591B3FB3642A43FE93CA9CC2C11B0D2D }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F71DC9AC6FD34CD8B5520EF448759681 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4DA7EC69BE0443E182E76E500F03FDF2 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_ABBD3457732E41AB9FACA5DF6121F7A1 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6E1B2AFE7566476B8526A9EC9606BD2A }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_EE88BAC2158B4D148094EAC4643A4951 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -62,6 +62,4 @@ jobs:
           app-name: 'socia-app'
           slot-name: 'Production'
           package: .
-          startup-command: 'node index.js'
-
           
