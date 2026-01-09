@@ -1,4 +1,4 @@
-# Media sharing assignment
+## Media sharing assignment
 
 ### Setup
 
